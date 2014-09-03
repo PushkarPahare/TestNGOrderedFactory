@@ -2,6 +2,12 @@ package test.testng;
 
 import org.testng.annotations.Factory;
 
+/**
+ * Factory class that creates instances of TestImplementation and sets the order of execution
+ * 
+ * @author ppahare
+ *
+ */
 public class FactoryTest {
 	@Factory
 	public Object[] createTest() {

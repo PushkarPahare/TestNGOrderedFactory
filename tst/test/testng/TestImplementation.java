@@ -2,23 +2,40 @@ package test.testng;
 
 import org.testng.annotations.Test;
 
+/**
+ * Here goes the actual Test Class
+ * 
+ * @author ppahare
+ *
+ */
 public class TestImplementation {
-	int c_instance;
+	int order;
 
-	public int getC_instance() {
-		return c_instance;
+	public int getOrder() {
+		return order;
 	}
 
-	public void setC_instance(int c_instance) {
-		this.c_instance = c_instance;
+	public void setOrder(int order) {
+		this.order = order;
 	}
 
 	public TestImplementation(int instance) {
-		this.c_instance = instance;
+		this.order = instance;
 	}
 
+	/*
+	 * Write your test here.
+	 */
 	@Test
-	public void printMethod() {
-		System.out.println("Instance Num is " + c_instance);
+	public void printMethod1() {
+		System.out.println("Method 1, Instance Num is " + order);
+	}
+	
+	/*
+	 * Write your test here.
+	 */
+	@Test
+	public void printMethod2() {
+		System.out.println("Method 2, Instance Num is " + order);
 	}
 }
